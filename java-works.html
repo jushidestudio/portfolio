@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制作物（Java） - 羽田直樹のプロフィール</title>
+    <!-- Tailwind CSSをCDNで読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* グローバルフォントの設定 */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4 md:p-8">
+        <!-- ヘッダー -->
+        <header class="bg-white rounded-xl shadow-lg p-6 mb-8 md:p-8">
+            <h1 class="text-4xl font-bold text-center text-indigo-700 mb-2">制作物（Java）</h1>
+            
+            <!-- ナビゲーションメニュー -->
+            <nav class="headnavi mt-6">
+                <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
+                    <li><a href="index.html" class="block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 text-center shadow-md">ホーム</a></li>
+                    <li><a href="self-introduction.html" class="block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 text-center shadow-md">自己紹介</a></li>
+                    <li><a href="goals.html" class="block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 text-center shadow-md">訓練期間中の目標</a></li>
+                    <li><a href="python-works.html" class="block bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 text-center shadow-md">制作物（Python）</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- メインコンテンツ -->
+        <main class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- 制作物一覧セクション -->
+            <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 md:col-span-2">
+                <h2 class="text-3xl font-semibold text-gray-700 border-b-2 border-indigo-400 pb-2 mb-4">Java 制作物一覧</h2>
+                
+                <!-- 制作物カード1 -->
+                <div class="bg-gray-50 rounded-lg p-6 mb-6 shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">制作物タイトル1</h3>
+                    <p class="text-gray-600 mb-4">制作物の概要をここに記述します。どのような課題を解決したか、どのような機能があるかなどを具体的に説明してください。</p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">Java</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">Spring Framework</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">MySQL</span>
+                    </div>
+                    <a href="https://github.com/your-username/your-java-project" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">GitHubで詳細を見る →</a>
+                </div>
+
+                <!-- 制作物カード2 -->
+                <div class="bg-gray-50 rounded-lg p-6 mb-6 shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">制作物タイトル2</h3>
+                    <p class="text-gray-600 mb-4">別の制作物の概要をここに記述します。こちらも同様に、制作物のポイントを明確に伝えましょう。</p>
+                    <div class="flex flex-wrap gap-2 text-sm mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">Java</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">JSP/Servlet</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-medium">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/your-username/your-other-java-project" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200">GitHubで詳細を見る →</a>
+                </div>
+            </section>
+            
+            <!-- サイドバー (ナビゲーションメニューの再掲) -->
+            <aside class="bg-white rounded-xl shadow-lg p-6 md:p-8 hidden md:block">
+                <h2 class="text-2xl font-semibold text-gray-700 border-b border-gray-300 pb-2 mb-4">メニュー</h2>
+                <nav>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="block p-3 rounded-lg text-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">ホーム</a></li>
+                        <li><a href="self-introduction.html" class="block p-3 rounded-lg text-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">自己紹介</a></li>
+                        <li><a href="goals.html" class="block p-3 rounded-lg text-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">訓練期間中の目標</a></li>
+                        <li><a href="python-works.html" class="block p-3 rounded-lg text-lg text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200">制作物（Python）</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
